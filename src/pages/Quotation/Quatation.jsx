@@ -8,7 +8,6 @@ import emailjs from '@emailjs/browser';
 function Quatation() {
     const [formData, setFormData] = useState([]);
     const navigate = useNavigate()
-
     const [prev, setprev] = useState([]);
     const [nameError, setNameError] = useState("");
     const [PhoneError, setPhoneError] = useState("");
@@ -52,7 +51,6 @@ function Quatation() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs
             .sendForm('service_foq024o', 'template_0bwpy33', form.current, {
                 publicKey: 'Etg1rgsQOvVjtW0tp',
@@ -67,7 +65,7 @@ function Quatation() {
             );
     };
 
-
+ 
     return (
         <>
             <div className="quotation_wrapper">
@@ -76,7 +74,6 @@ function Quatation() {
                     <form ref={form} onSubmit={sendEmail} >
                         <div>
                             <textarea name="message" value='hello' hidden />
-
                             <select
                                 name='message'
                                 required
@@ -131,7 +128,6 @@ function Quatation() {
                                 type="tel"
                                 name="message"
                                 placeholder="Your Contact No."
-
                                 onInput={num}
                                 required
                             />
@@ -155,7 +151,6 @@ function Quatation() {
                                     type="text"
                                     placeholder="Location To"
                                     name='message'
-
                                     required
                                 />
                                 <span className="error">{ToError}</span>

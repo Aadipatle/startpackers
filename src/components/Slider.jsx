@@ -16,7 +16,7 @@ function Slider() {
                 <div className={style.container}>
                     <div className={style.heading}>
                         <img src={star} alt="" />
-                    
+
                     </div>
                     <div className={style.btn}>
                         <button onClick={handleShowQouat}>
@@ -24,15 +24,15 @@ function Slider() {
                         </button>
                     </div>
                 </div>
-            </div> 
+            </div>
             {
                 showNavbar ? <div className={style.getQouat}>
-                   
-                    <Quatation showNavbar = {showNavbar} setShowNavbar={setShowNavbar}/>
-          <span className={style.cross} onClick={()=>setShowNavbar(false) }>❌</span>
+
+                    <Quatation showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
+                    <span className={style.cross} onClick={() => setShowNavbar(false)}>❌</span>
 
 
-                </div>
+                </div> 
 
                     : ''
             }

@@ -19,7 +19,7 @@ function Header() {
                         <NavLink to="/"><img src={logo} alt="" /> </NavLink>
                     </div>
                     <div className="menu-icon" onClick={handleShowNavbar}>
-                        <img src={menu} alt="" />
+                        <img src={menu} alt="" /> 
                     </div>
                     <div className={`nav-elements  ${showNavbar && "active"}`}>
                         <ul> 
